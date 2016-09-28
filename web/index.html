@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>White Board</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <table style="width: 1000px">
+            <tr>
+                <td id="ctd" style="width: 10%;height: 10px"></td>
+                <td onclick="changeColor('red')" style="background-color: red;width: 10%;height: 10px"></td>
+                <td onclick="changeColor('green')" style="background-color: green;width: 10%;height: 10px"></td>
+                <td onclick="changeColor('blue')" style="background-color: blue;width: 10%;height: 10px"></td>
+                <td onclick="changeColor('black')" style="background-color: black;width: 10%;height: 10px"></td>
+                <td onclick="changeColor('purple')" style="background-color: purple;width: 10%;height: 10px"></td>
+                <td onclick="changeColor('crimson')" style="background-color: crimson;width: 10%;height: 10px"></td>
+                <td onclick="changeColor('hotpink')" style="background-color: hotpink;width: 10%;height: 10px"></td>
+                <td onclick="changeColor('yellow')" style="background-color: yellow;width: 10%;height: 10px"></td>
+                <td onclick="changeColor('snow')" style="background-color: snow;width: 10%;height: 10px"></td>
+            </tr>
+        </table>
+        <br/>
+        <canvas id="canvas" width="1000" height="800" style="background-color: beige"></canvas>
+        
+        <br/>
+        <textarea id="txt"  style="display: none">
+            
+        </textarea>
+        <hr/>
+        debug: <br/>
+        <p  >Status : <span id="status"></span></p>
+        <p>Object Count : <span id="ac" ></span> </p>
+        <br/>
+        <input type="button" onclick="closeSocket()" value="disconnect"/>
+        <input type="button" onclick="clear()" value="clear"/>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
+        <script src="index.js" ></script>
+    </body>
+</html>
